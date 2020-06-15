@@ -12,7 +12,7 @@ const MenuItems = () => {
         <div>
             {
                 currentDisplay.map(food =>
-                    <FoodItem food = {food}></FoodItem>
+                    <FoodItem food = {food} key = {food.id}></FoodItem>
                 )
             }
         </div>
