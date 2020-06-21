@@ -7,7 +7,7 @@ const FoodItem = (props) => {
 
     return (
             <div className="single-item">
-                {/* <img className="item-image" src={require(`../../resources/${image}`)} alt=""/> */}
+                <img className="item-image" src={image} alt=""/>
                 <h4>{name}</h4>
                 <h6>Price: ${price}</h6>
                 <p><small>{shortDescription}</small></p>
