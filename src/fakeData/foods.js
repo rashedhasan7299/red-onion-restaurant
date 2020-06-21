@@ -5,7 +5,7 @@ var foods = [{
   "price": "$6.99",
   "shortDescription": "Lorem ipsum, dolor sit amet consectetur adipisicing",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/Breakfast/breakfast1.png"
+  "image": "../../resources/Breakfast/breakfast1.png"
 },
 {
   "id": 2,
@@ -14,7 +14,7 @@ var foods = [{
   "price": "$9.99",
   "shortDescription": "Lorem ipsum, dolor sit amet consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/Breakfast/breakfast2.png"
+  "image": "../../resources/Breakfast/breakfast2.png"
 },
 {
   "id": 3,
@@ -23,7 +23,7 @@ var foods = [{
   "price": "$12.99",
   "shortDescription": "Lorem ipsum, dolor sit amet consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/Breakfast/breakfast3.png"
+  "image": "../../resources/Breakfast/breakfast3.png"
 },
 {
   "id": 4,
@@ -32,7 +32,7 @@ var foods = [{
   "price": "$7.99",
   "shortDescription": "Lorem ipsum, dolor sit amet",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/Breakfast/breakfast4.png"
+  "image": "../../resources/Breakfast/breakfast4.png"
 }, 
 {
   "id": 5,
@@ -41,7 +41,7 @@ var foods = [{
   "price": "$5.99",
   "shortDescription": "Lorem ipsum, dolor sit amet",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/Breakfast/breakfast5.png"
+  "image": "../../resources/Breakfast/breakfast5.png"
 }, 
 {
   "id": 6,
@@ -50,7 +50,7 @@ var foods = [{
   "price": "$13.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/Breakfast/breakfast6.png"
+  "image": "../../resources/Breakfast/breakfast6.png"
 }, 
 {
   "id": 7,
@@ -59,7 +59,7 @@ var foods = [{
   "price": "$23.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/lunch/lunch1.png"
+  "image": "../../resources/lunch/lunch1.png"
 }, 
 {
   "id": 8,
@@ -68,7 +68,7 @@ var foods = [{
   "price": "$9.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/lunch/lunch2.png"
+  "image": "../../resources/lunch/lunch2.png"
 }, 
 {
   "id": 9,
@@ -77,7 +77,7 @@ var foods = [{
   "price": "$6.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/lunch/lunch3.png"
+  "image": "../../resources/lunch/lunch3.png"
 }, 
 {
   "id": 10,
@@ -86,7 +86,7 @@ var foods = [{
   "price": "$23.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/lunch/lunch4.png"
+  "image": "../../resources/lunch/lunch4.png"
 }, 
 {
   "id": 11,
@@ -95,7 +95,7 @@ var foods = [{
   "price": "$15.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/lunch/lunch5.png"
+  "image": "../../resources/lunch/lunch5.png"
 }, 
 {
   "id": 12,
@@ -104,7 +104,7 @@ var foods = [{
   "price": "$7.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/lunch/lunch6.png"
+  "image": "../../resources/lunch/lunch6.png"
 }, 
 {
   "id": 13,
@@ -113,7 +113,7 @@ var foods = [{
   "price": "$9.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/Dinner/dinner1.png"
+  "image": "../../resources/Dinner/dinner1.png"
 }, 
 {
   "id": 14,
@@ -122,7 +122,7 @@ var foods = [{
   "price": "$12.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/Dinner/dinner2.png"
+  "image": "../../resources/Dinner/dinner2.png"
 }, 
 {
   "id": 15,
@@ -131,7 +131,7 @@ var foods = [{
   "price": "$11.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/Dinner/dinner3.png"
+  "image": "../../resources/Dinner/dinner3.png"
 }, 
 {
   "id": 16,
@@ -140,7 +140,7 @@ var foods = [{
   "price": "$5.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/Dinner/dinner4.png"
+  "image": "../../resources/Dinner/dinner4.png"
 }, 
 {
   "id": 17,
@@ -149,7 +149,7 @@ var foods = [{
   "price": "$6.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/Dinner/dinner5.png"
+  "image": "../../resources/Dinner/dinner5.png"
 }, 
 {
   "id": 18,
@@ -158,7 +158,7 @@ var foods = [{
   "price": "$9.99",
   "shortDescription": "Lorem ipsum, dolor sit amet dolor sit consectetur",
   "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo molestiae soluta architecto debitis consequatur unde, recusandae laborum quos ex.",
-  "image": "../resources/Dinner/dinner6.png"
+  "image": "../../resources/Dinner/dinner6.png"
 }
 ];
 

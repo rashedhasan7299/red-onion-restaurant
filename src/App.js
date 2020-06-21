@@ -9,7 +9,6 @@ import {
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
 import MenuItems from './components/MenuItems/MenuItems';
-import FoodItem from './components/FoodItem/FoodItem';
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
           </Route>
 
         </Switch>
-        <FoodItem></FoodItem>
       </Router>
     </div>
   );

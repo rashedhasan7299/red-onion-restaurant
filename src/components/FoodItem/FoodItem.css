@@ -1,0 +1,18 @@
+.single-item {
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    margin: 30px 75px;
+    transition: .3s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.single-item:hover {
+    scale: 1.1;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+
+.item-image {
+    width: 50%;
+}

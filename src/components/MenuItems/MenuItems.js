@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import foods from '../../fakeData/foods';
 import FoodItem from '../FoodItem/FoodItem';
+import './MenuItems.css';
 
 const MenuItems = () => {
     const { category } = useParams();
@@ -9,7 +10,7 @@ const MenuItems = () => {
     // console.log(currentDisplay);
     
     return (
-        <div>
+        <div className="food-container">
             {
                 currentDisplay.map(food =>
                     <FoodItem food = {food} key = {food.id}></FoodItem>
