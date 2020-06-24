@@ -14,6 +14,7 @@ import Footer from './components/Footer/Footer';
 import SingleItem from './components/SingleItem/SingleItem';
 import NotFound from './components/NotFound/NotFound';
 import Login from './components/Login/Login';
+import SignUp from './components/Login/SignUp/SignUp';
 
 function App() {
   return (
@@ -31,8 +32,11 @@ function App() {
           <Route exact path='/'>
             <Redirect to='/menu/lunch' />
           </Route>
-          <Route exact path='/login'>
+          <Route path='/login'>
             <Login></Login>
+          </Route>
+          <Route path='/signUp'>
+            <SignUp></SignUp>
           </Route>
           <Route path='*'>
             <NotFound></NotFound>
