@@ -3,12 +3,13 @@ import './FoodItem.css';
 import { Link } from 'react-router-dom';
 
     const FoodItem = (props) => {
-        const {name, price, image, shortDescription, id, category} = props.food;
+        const {name, price, image, shortDescription, id} = props.food;
+        const currentId = id;
 
 
     return (
             <div>
-                <Link to ={'/menu/'+id} style={{ textDecoration: 'none', color: 'black' }}>
+                <Link to ={'/view/'+currentId} style={{ textDecoration: 'none', color: 'black' }}>
                     <div className="single-item">
                         <img className="item-image" src={image} alt=""/>
                         <h4>{name}</h4>

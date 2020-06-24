@@ -19,13 +19,13 @@ function App() {
   return (
     <div className='App'>
       <Router>
-        <Header></Header>
-        <Menu></Menu>
+      <Header></Header>
+      <Menu></Menu>
         <Switch>
           <Route path='/menu/:category'>
             <MenuItems></MenuItems>
           </Route>
-          <Route path='/menu/:id'>
+          <Route path='/view/:currentId'>
             <SingleItem></SingleItem>
           </Route>
           <Route exact path='/'>
@@ -38,9 +38,9 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
-        <ChooseUs></ChooseUs>
-        <Footer></Footer>
       </Router>
+      <ChooseUs></ChooseUs>
+      <Footer></Footer>
     </div>
   );
 }
