@@ -16,3 +16,7 @@
 .item-image {
     width: 50%;
 }
+
+Link h4{
+    text-decoration: none;
+}

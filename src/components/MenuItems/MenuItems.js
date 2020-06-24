@@ -10,12 +10,17 @@ const MenuItems = () => {
     // console.log(currentDisplay);
     
     return (
-        <div className="food-container">
+        <div className="shop">
+            <div className="food-container">
             {
                 currentDisplay.map(food =>
                     <FoodItem food = {food} key = {food.id}></FoodItem>
                 )
             }
+            </div>
+            <div className="btn">
+                <button className='proceed' disabled>Proceed to Checkout</button>
+            </div>
         </div>
     );
 };

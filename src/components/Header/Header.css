@@ -1,101 +1,115 @@
 .top-banner {
-    background: url('../../resources/bannerbackground.png');
-    height: 75vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
+  background: url('../../resources/bannerbackground.png');
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
 }
 
 .logo {
-    height: 40px;
+  height: 40px;
 }
 
 .navbar {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 100px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 100px;
 }
 
 .nav-menu a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: 600;
-    margin-left: 30px;
-    padding: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 30px;
+  padding: 20px;
 }
 
 .nav-menu a:hover {
-    background-color: #f91944;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 50%;
-    transition: 0.4s ease-out;
+  background-color: #f91944;
+  color: white;
+  padding: 15px 20px;
+  transition: 0.5s;
+  border-radius: 40px;
+  /* padding: 5px 10px; */
+}
+
+.nav-menu a:active {
+  background-color: #f91944;
+  color: white;
+  padding: 15px 20px;
+  transition: 0.5s;
+  border-radius: 40px;
+  /* padding: 5px 10px; */
 }
 
 .icon {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .top-banner h1 {
-    font-weight: 400;
-    font-size: 4rem;
-    margin-bottom: 100px;
+  font-weight: 400;
+  font-size: 4rem;
+  margin-bottom: 100px;
 }
 
 .searchBox {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform:  translate(-50%,50%);
-    background: white;
-    height: 50px;
-    border-radius: 40px;
-    
-
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: white;
+  height: 50px;
+  border-radius: 40px;
 }
 
 .searchBox:hover > .searchInput {
-    width: 400px;
-    padding-left: 20px;
+  width: 400px;
+  padding-left: 20px;
 }
 
 .searchBox:hover > .searchButton {
   background: #f91944;
-  color : white;
+  color: white;
 }
 
 .searchButton {
-    color: white;
-    float: right;
-    width: 100px;
-    height: 50px;
-    border-radius: 40px;
-    background: #f91944;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-    border: none;
+  color: white;
+  float: right;
+  width: 100px;
+  height: 50px;
+  border-radius: 40px;
+  background: #f91944;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border: none;
 }
 
 .searchInput {
-    border:none;
-    background: none;
-    outline:none;
-    float:left;
-    padding: 0;
-    color: black;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: black;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
 
+.logo-btn {
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* .top-banner.searchInput::placeholder  {
@@ -103,8 +117,8 @@
 } */
 
 @media screen and (max-width: 620px) {
-.searchBox:hover > .searchInput {
+  .searchBox:hover > .searchInput {
     width: 400px;
     padding: 0 6px;
-}
+  }
 }

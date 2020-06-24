@@ -1,0 +1,27 @@
+.font-icon {
+    margin-right: 20px;
+}
+
+.font-icon i {
+    margin-top: 20px;
+    background-color: #f91944;
+    color: white;
+    font-weight: 100;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.see-link {
+    color: blue;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.see-link .fas {
+    background-color: lightgreen;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: .8rem;
+}
