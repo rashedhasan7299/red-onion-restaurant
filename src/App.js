@@ -15,6 +15,7 @@ import SingleItem from './components/SingleItem/SingleItem';
 import NotFound from './components/NotFound/NotFound';
 import Login from './components/Login/Login';
 import SignUp from './components/Login/SignUp/SignUp';
+import Cart from './components/Cart/Cart';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path='/signUp'>
             <SignUp></SignUp>
+          </Route>
+          <Route path='/cart'>
+            <Cart></Cart>
           </Route>
           <Route path='*'>
             <NotFound></NotFound>

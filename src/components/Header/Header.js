@@ -18,11 +18,11 @@ const Header = () => {
     }, [])
 
   const navActive = {
-    'background-color': '#f91944',
-    color: 'white',
-    padding: '15px 20px',
-    transition: ' 0.5s',
-    'border-radius': '40px'
+    'backgroundColor': '#f91944',
+    "color": 'white',
+    "padding": '15px 20px',
+    "transition": ' 0.5s',
+    'borderRadius': '40px'
   };
 
   return (

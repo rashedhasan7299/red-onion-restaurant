@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import foods from '../../fakeData/foods';
 import FoodItem from '../FoodItem/FoodItem';
 import './MenuItems.css';
@@ -31,7 +31,7 @@ const MenuItems = () => {
             </div>
             <div className="btn">
                 {
-                    proceed ? <button className='proceed'>Proceed to Checkout</button>
+                    proceed ? <Link to ='/cart'><button className='proceed'>Proceed to Checkout</button></Link>
                     : <button className='proceed' disabled>Proceed to Checkout</button>
                 }
             </div>

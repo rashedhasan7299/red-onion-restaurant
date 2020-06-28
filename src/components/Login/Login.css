@@ -1,20 +1,25 @@
 .sub-page {
-  height: 800px;
+  height: 700px;
   background-image: url('../../resources/bottomBackground.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
-  margin: auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-form {
+  padding: 0 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-login {
-  height: 10%;
-  margin-bottom: 0 auto 50px auto;
-}
-
-form {
-  padding: 0 80px;
+  width: 350px;
+  margin-bottom: 40px;
 }
 
 form p {
