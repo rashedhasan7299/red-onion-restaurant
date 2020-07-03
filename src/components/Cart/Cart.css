@@ -1,3 +1,23 @@
 .main-cart {
-  height: 800px;
+  min-height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.delivery-information h3 {
+  border-bottom: 1px solid darkgrey;
+  padding-bottom: 20px;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.section-name, .amount {
+  display: inline;
+}
+
+.place-order {
+  width: 400px;
 }

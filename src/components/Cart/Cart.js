@@ -20,13 +20,80 @@ const Cart = () => {
         setCartFoods(allCartFood);
         console.log(cartFoods);
 
-    }, [])
+    }, [cartFoods.length])
+
+    let subTotal = 0;
+    const calculateSubTotal = () => {
+        cartFoods.map(food => subTotal = subTotal + (food.quantity * parseFloat(food.price)))
+        return subTotal;
+    }
+
+    const calculateTax = () => {
+        let tax = subTotal % 15;
+        return tax.toFixed(2);
+    }
+
+    const deliveryFee = () => {
+        let fee = 0;
+        if(subTotal < 10 && subTotal > 0) {fee = 0}
+        else if(subTotal < 50 && subTotal > 10) {fee = 5}
+        else if(subTotal < 100 && subTotal > 50) {fee = 10}
+        else if(subTotal < 500 && subTotal > 100) {fee = 15}
+        else fee = 0
+        return fee;
+    }
+
+
     return (
         <div className='container main-cart'>
-            <h1>Order Summary:</h1>
-            {
-                
-            }
+
+            <div className="delivery-information">
+                <h3>Edit Delivery Address</h3>
+                <form>
+                        <input type="text" name="method" placeholder="Deliver to:"/>
+                        <input type="text" name="address" placeholder="Street Name:"/>
+                        <input type="text" name="additional info" placeholder="House No./Flat/floor no."/>
+                        <input type="text" name="clientName" placeholder="Business Name"/>
+                        <input type="text" name="instruction" placeholder="Add Delivery Instruction"/>
+                        <input type="submit" value="Save and Continue" />
+                </form>
+
+            </div>
+
+            <div>
+
+            </div>
+
+            <div className="review-cart">
+
+                <p>From <b>Gulshan Plaza</b></p>
+                <p>Arriving in 30-40 minutes</p>
+                <p>107 road no 8</p>
+                {
+                    cartFoods.map(currentFood=> <CartItems key = {currentFood.id} currentFood= {currentFood} ></CartItems>)
+                }
+
+                <h2>Order Summary: </h2>
+
+                <div className="summary">
+                    <div className="section-name">
+                        <h4>Subtotal: </h4>
+                        <h4>tax: </h4>
+                        <h4>Delivery Fee: </h4>
+                        <h4>Total: </h4>
+                    </div>
+                    <div className="amount">
+                        <h4>{calculateSubTotal()}</h4>
+                        <h4>{calculateTax()}</h4>
+                        <h4>{deliveryFee()}</h4>
+                        <h4>{subTotal + calculateTax() + deliveryFee()}</h4>
+                    </div>
+                </div>
+                {
+                    cartFoods.length > 0 ? <button className='proceed place-order'>Place Order</button>
+                    : <button className='proceed place-order' disabled>Place Order</button>
+                }
+            </div>
         </div>
     );
 };
