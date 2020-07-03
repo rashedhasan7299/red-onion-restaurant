@@ -15,6 +15,7 @@ const CartItems = (props) => {
         currentFood.quantity = currentQuantity;
         console.log(currentFood);
         addToDatabaseCart(clickedId, currentQuantity);
+        getDatabaseCart();
     }
 
     const handleSub = clickedId => {
@@ -25,6 +26,7 @@ const CartItems = (props) => {
             currentFood.quantity = currentQuantity;
             console.log(currentFood);
             addToDatabaseCart(clickedId, currentQuantity);
+            getDatabaseCart();
         }
 
         if(quantityCount===0 || quantityCount ===1) {

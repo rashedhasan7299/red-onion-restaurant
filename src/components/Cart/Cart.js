@@ -20,21 +20,20 @@ const Cart = () => {
         setCartFoods(allCartFood);
         console.log(cartFoods);
 
-    }, [cartFoods.length])
+    }, [])
 
     let subTotal = 0;
     const calculateSubTotal = () => {
         cartFoods.map(food => subTotal = subTotal + (food.quantity * parseFloat(food.price)))
-        return subTotal;
+        return subTotal.toFixed(2);
     }
-
+    let tax = 0;
     const calculateTax = () => {
-        let tax = subTotal % 15;
+        tax = subTotal * 0.15;
         return tax.toFixed(2);
     }
-
+    let fee = 0;
     const deliveryFee = () => {
-        let fee = 0;
         if(subTotal < 10 && subTotal > 0) {fee = 0}
         else if(subTotal < 50 && subTotal > 10) {fee = 5}
         else if(subTotal < 100 && subTotal > 50) {fee = 10}
@@ -42,6 +41,7 @@ const Cart = () => {
         else fee = 0
         return fee;
     }
+
 
 
     return (
@@ -86,7 +86,7 @@ const Cart = () => {
                         <h4>{calculateSubTotal()}</h4>
                         <h4>{calculateTax()}</h4>
                         <h4>{deliveryFee()}</h4>
-                        <h4>{subTotal + calculateTax() + deliveryFee()}</h4>
+                        <h4>{(subTotal+tax+fee).toFixed(2)}</h4>
                     </div>
                 </div>
                 {
