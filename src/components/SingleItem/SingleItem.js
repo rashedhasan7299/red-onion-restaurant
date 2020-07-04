@@ -9,7 +9,7 @@ import { addToDatabaseCart, getDatabaseCart } from '../../../src/utilities/datab
 import { useEffect } from 'react';
 
 
-const SingleItem = () => {
+const SingleItem = (props) => {
     const [count, setCount] = useState(0);
     const {currentId}  = useParams();
 

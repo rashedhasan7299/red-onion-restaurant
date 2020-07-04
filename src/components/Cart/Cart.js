@@ -6,10 +6,12 @@ import foods from '../../fakeData/foods';
 const Cart = () => {
 
     const [cartFoods, setCartFoods] = useState([]);
+
+    let previousCart =[];
     
     useEffect(() => {
         // console.log(foods);
-        const previousCart = getDatabaseCart();
+        previousCart = getDatabaseCart();
         const foodIds = Object.keys(previousCart);
         // console.log(foodIds);
         const allCartFood = foodIds.map( id => {
@@ -18,9 +20,9 @@ const Cart = () => {
             return(food);
         })
         setCartFoods(allCartFood);
-        console.log(cartFoods);
+        console.log(previousCart);
 
-    }, [])
+    }, [previousCart.length])
 
     let subTotal = 0;
     const calculateSubTotal = () => {
