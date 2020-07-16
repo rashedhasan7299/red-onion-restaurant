@@ -5,17 +5,24 @@ import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons';
 import logo from '../../resources/logo2.png';
 import { Link, NavLink } from 'react-router-dom';
 import { getDatabaseCart } from '../../utilities/databaseManager';
+import { useAuth } from '../Login/useAuth';
 
 const Header = () => {
+  // const [cart, setCart] = useState([]);
+
+  const auth = useAuth();
 
   const [proceed , setProceed] = useState(false);
+
   const [foodCount, setFoodCount] = useState(0);
+
     useEffect(() => {
         const previousCart = getDatabaseCart();
+        // setCart(previousCart);
         const foodIds = Object.keys(previousCart);
         foodIds.length>0 && setProceed(true);
         setFoodCount(foodIds.length);
-    }, [])
+    }, [foodCount])
 
   const navActive = {
     'backgroundColor': '#f91944',
@@ -38,14 +45,17 @@ const Header = () => {
           <NavLink activeStyle={navActive} to='/cart' className='icon'>
             <FontAwesomeIcon icon={faShoppingCart} />
             <p style={{display: 'inline'}}><small> {foodCount}</small></p>
-            
           </NavLink>
-          <NavLink activeStyle={navActive} to='/login'>
-            Login
-          </NavLink>
-          <NavLink activeStyle={navActive} to='/signUp'>
-            SignUp
-          </NavLink>
+          {
+            auth.user ? <>
+            <NavLink onClick={auth.signOut} activeStyle={navActive} to='/login'>Logout</NavLink>
+            <NavLink to='/'>Hi, {auth.user.name}!</NavLink>
+            </>
+            : <>
+            <NavLink activeStyle={navActive} to='/login'>Login</NavLink>
+            <NavLink activeStyle={navActive} to='/signUp'>SignUp</NavLink>
+            </>
+          }
         </div>
       </div>
 

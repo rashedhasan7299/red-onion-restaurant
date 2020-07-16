@@ -3,9 +3,15 @@ import './Cart.css';
 import { getDatabaseCart } from '../../utilities/databaseManager';
 import CartItems from '../CartItems/CartItems';
 import foods from '../../fakeData/foods';
+import { useAuth } from '../Login/useAuth';
+import { Link } from 'react-router-dom';
+
+
 const Cart = () => {
 
     const [cartFoods, setCartFoods] = useState([]);
+
+    const auth = useAuth();
 
     let previousCart =[];
     
@@ -92,7 +98,9 @@ const Cart = () => {
                     </div>
                 </div>
                 {
-                    cartFoods.length > 0 ? <button className='proceed place-order'>Place Order</button>
+                    cartFoods.length > 0 && auth.user ? <button className='proceed place-order'><Link to ='/complete' style={{textDecoration: 'none', color: 'white'}}>Place Order</Link></button>
+                    : cartFoods.length > 0 && auth.user === null ? <button className='proceed place-order'><Link to ='/login' style={{textDecoration: 'none', color: 'white'}}>Sign In</Link></button>
+                    : cartFoods.length === 0 && auth.user === null ? <button className='proceed place-order' disabled>Place Order</button>
                     : <button className='proceed place-order' disabled>Place Order</button>
                 }
             </div>

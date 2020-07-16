@@ -53,3 +53,17 @@ input[type='submit'] {
   text-align: center;
   margin: auto;
 }
+
+.google-btn {
+  display: block;
+  height: 50px;
+  background-color: darkgray;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+}
+
+.google-btn:focus {
+  border: none;
+}
