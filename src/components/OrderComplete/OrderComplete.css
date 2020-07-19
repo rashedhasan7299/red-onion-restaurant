@@ -2,7 +2,7 @@
     background-color: rgb(236, 236, 236);
     border-radius: 40px;
     width: 50%;
-    margin-left: 100px;
+    margin: 100px;
 }
 
 .delivery-info img {
@@ -24,4 +24,8 @@
     width: 90%;
     margin: auto;
     padding: 30px;
+}
+
+.delivery-info .proceed {
+    margin: auto;
 }

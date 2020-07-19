@@ -39,6 +39,7 @@ const OrderComplete = () => {
                         auth.user && <h4>{auth.user.name}</h4>
                     }
                 </div>
+                <button className='proceed'>Contact Rider</button>
                 
             </div>
         </div>

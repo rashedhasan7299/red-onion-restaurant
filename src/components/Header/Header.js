@@ -13,6 +13,7 @@ const Header = () => {
   const auth = useAuth();
 
   const [proceed , setProceed] = useState(false);
+  // const [cart, setCart] = useState([]);
 
   const [foodCount, setFoodCount] = useState(0);
 

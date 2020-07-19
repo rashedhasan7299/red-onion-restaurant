@@ -24,7 +24,7 @@ const SingleItem = (props) => {
             const currentCount = previousCart[currentItem];
             setCount(currentCount);
         }
-    }, [id])
+    }, [])
 
 
     const handleSub = () => {
